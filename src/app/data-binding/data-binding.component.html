@@ -80,6 +80,8 @@
         (keyup.enter)="salvarValor(campoInput.value)"
         (blur)="salvarValor(campoInput.value)"
         #campoInput />
+        // keyup.enter salva o valor quando clica enter
+        // blur: quando o campo perde o foco
 
        <p>Valor atual: {{ valorAtual }}</p>
        <p>Valor salvo: {{ valorSalvo }}</p>
@@ -90,6 +92,8 @@
         (mouseout)="onMouseOverOut()"
         [class.highlight]="isMouseOver"
         >
+        // mouseover: quando o mouse está sobre o texto, mouseout: quando tira o mouse
+
          Passe o mouse sobre mim
       </span>
     </div>

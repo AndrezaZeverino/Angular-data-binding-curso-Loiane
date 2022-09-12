@@ -2,16 +2,20 @@
     <article>
         <h3>Two-way data binding</h3>
         <div>
-          
-          <input type="text" 
-            [value]="nome"
-            (input)="nome = $event.target.value"
-          />
 
-          <input type="text" 
+          <input type="text"
+            [value]="nome"       //bindingdepropriedade
+            (input)="nome = $event.target.value"      //bindingdeevento 
+          />
+          // (input): pega o valor digitado no input
+
+          // essa parte de baixo faz a mesma coisa que a de cima
+          <input type="text"
             [ngModel]="nome"
             (ngModelChange)="nome = $event"
           />
+
+
 
           <input type="text" [(ngModel)]="nome">
 
