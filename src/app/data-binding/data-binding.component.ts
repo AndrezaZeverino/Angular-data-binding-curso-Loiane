@@ -17,13 +17,16 @@ export class DataBindingComponent implements OnInit {
 
   url: string = 'http://loiane.com';
   cursoAngular: boolean = true;
-  urlImagem = 'http://lorempixel.com/400/200/nature/';
+  urlImagem = 'https://picsum.photos/id/237/200/';
 
   valorAtual: string = '';
   valorSalvo = '';
 
   isMouseOver: boolean = false;
 
+
+  //estou passando a informação abaixo para o componente app curso (input-property.component.ts),
+  // no html usei o property binding [nome]="nomeDoCurso"
   nomeDoCurso: string = 'Angular';
 
   valorInicial = 15;

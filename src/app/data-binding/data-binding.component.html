@@ -19,7 +19,7 @@
     <h3>Class e Style Binding</h3>
     <div>
       Selecione uma classe:
-      // aqui a div vai alterando conforme a pessoa clica na opção do select
+      <!-- aqui a div vai alterando conforme a pessoa clica na opção do select -->
       <select #classe (change)="0">
         <option value="alert-success">Sucesso</option>
         <option value="alert-info">Info</option>
@@ -80,8 +80,8 @@
         (keyup.enter)="salvarValor(campoInput.value)"
         (blur)="salvarValor(campoInput.value)"
         #campoInput />
-        // keyup.enter salva o valor quando clica enter
-        // blur: quando o campo perde o foco
+         <!-- keyup.enter salva o valor quando clica enter
+         blur: quando o campo perde o foco -->
 
        <p>Valor atual: {{ valorAtual }}</p>
        <p>Valor salvo: {{ valorSalvo }}</p>
@@ -92,7 +92,7 @@
         (mouseout)="onMouseOverOut()"
         [class.highlight]="isMouseOver"
         >
-        // mouseover: quando o mouse está sobre o texto, mouseout: quando tira o mouse
+         <!-- mouseover: quando o mouse está sobre o texto, mouseout: quando tira o mouse -->
 
          Passe o mouse sobre mim
       </span>

@@ -4,12 +4,14 @@
         <div>
 
           <input type="text"
-            [value]="nome"       //bindingdepropriedade
-            (input)="nome = $event.target.value"      //bindingdeevento 
+            [value]="nome"
+            (input)="nome = $event.target.value"
           />
-          // (input): pega o valor digitado no input
+          <!-- [value]="nome"       //bindingdepropriedade -->
+          <!-- (input)="nome = $event.target.value"      //bindingdeevento -->
+           <!-- (input): pega o valor digitado no input -->
 
-          // essa parte de baixo faz a mesma coisa que a de cima
+           <!-- essa parte de baixo faz a mesma coisa que a de cima -->
           <input type="text"
             [ngModel]="nome"
             (ngModelChange)="nome = $event"
