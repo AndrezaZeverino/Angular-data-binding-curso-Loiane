@@ -29,7 +29,7 @@ export class DataBindingComponent implements OnInit {
   // no html usei o property binding [nome]="nomeDoCurso"
   nomeDoCurso: string = 'Angular';
 
-  valorInicial = 15;
+  valorInicial = 0;
 
   getValor(){
     return 1;
