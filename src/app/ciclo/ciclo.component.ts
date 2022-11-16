@@ -1,4 +1,4 @@
-import { 
+import {
   Component,
   OnInit,
   OnChanges,
@@ -17,8 +17,9 @@ import {
 export class CicloComponent implements OnChanges, OnInit,
     DoCheck, AfterContentInit, AfterContentChecked,
     AfterViewInit, AfterViewChecked, OnDestroy {
+      // sempre que for usar os ciclos de vida, incluo aqui a interface, exemplo: OnInit, OnChanges, etc...
 
-    @Input() valorInicial: number = 10;  
+    @Input() valorInicial: number = 10;
 
     constructor() {
       this.log('constructor');

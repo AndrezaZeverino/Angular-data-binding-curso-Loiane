@@ -15,7 +15,7 @@ export class AppComponent {
     this.valor++;
   }
 
-  destruirClico(){
+  destruirCiclo(){
     this.deletarCiclo = true;
   }
 }
